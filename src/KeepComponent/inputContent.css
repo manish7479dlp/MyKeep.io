@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+body {
+    background-color: rgb(173, 65, 173);
+}
+
+.container {
+    width: 400px;
+    height: 150px;
+    /* border: 2px solid black; */
+    margin: 20px auto;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+
+.title , .content {
+    background-color: transparent;
+    outline: none;
+    border:2px solid rgb(243, 148, 148);
+    width: 300px;
+    padding: 5px 2px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-top: 7px;
+    
+    
+}
+
+.content {
+    resize: none;
+    /* font-family: cursive; */
+}
+.btn_div{
+    /* background-color: red; */
+    position: absolute;
+
+}
+
+.container button {
+    padding: 4px;
+    width: 50px;
+    /* outline: none; */
+    border: none;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    color: green;
+    font-weight: 900;
+    position: relative;
+    left: 250px;
+    bottom: 1px;
+    transition: .8s;
+}
+
+.container button:hover{
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(113, 207, 5);
+}
+
+
+
+/* Note.jsx css start... */
+
+.noteContainer {
+    display: inline-block ;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    margin: 50px 20px 20px 62px;
+    background-color: white;
+    border-radius: 20px;
+    
+    
+    
+}
+
+.noteContainer h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid maroon;
+    padding: 2px;
+}
+
+.noteContainer p {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-weight: 500;
+}
+
+.noteContainer button {
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 900;
+    border: none;
+    margin-left: 170px;
+    background-color: rgb(223, 223, 55);
+    transition: .8s;
+}
+
+.noteContainer button:hover{
+    background-color: red;
+    color: white;
+    /* border: 2px solid white; */
+}

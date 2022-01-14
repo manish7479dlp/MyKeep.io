@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React  , {useState} from 'react'
+import Heading from './KeepComponent/Heading'
+import InputContent from './KeepComponent/InputContent'
+import Note from './KeepComponent/Note'
 
-function App() {
+const App = () =>{
+  const [Item , nItem] = useState([]);
+  
+  const addNote = (Data) =>{
+    nItem((preData) =>{
+      return [...preData , Data];
+    }) 
+
+    console.log(Data );
+
+
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Heading/>
+      <InputContent onSelect = {addNote}/>
+
+     { Item.map((val , idx) =>{
+        return  (<Note title = {val.title} key = {idx} content = {val.content} />)
+      })}
+
+  </>
+  )
 }
 
 export default App;
