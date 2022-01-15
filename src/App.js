@@ -7,12 +7,26 @@ const App = () =>{
   const [Item , nItem] = useState([]);
   
   const addNote = (Data) =>{
-    nItem((preData) =>{
-      return [...preData , Data];
-    }) 
+    
+    if((Data.title === "" ) || (Data.content === "")) {
+      alert("Empty field not allowed..");
+    } else {
+      nItem((preData) =>{
+        return [...preData , Data];
+      }) 
+    }
 
-    console.log(Data );
+  }
 
+  const deleteNote = (target) =>{
+    
+    nItem(() =>{
+      return (
+        Item.filter((val , idx) =>{
+          return target != idx;
+        })
+      )
+    })
 
   }
   
@@ -22,8 +36,8 @@ const App = () =>{
       <InputContent onSelect = {addNote}/>
 
      { Item.map((val , idx) =>{
-        return  (<Note title = {val.title} key = {idx} content = {val.content} />)
-      })}
+        return  (<Note title = {val.title} key = {idx} id = {idx} content = {val.content} removeNote = {deleteNote}/>)})}
+     
 
   </>
   )

@@ -1,7 +1,6 @@
 import React , { useState }from 'react'
 import './inputContent.css'
-import Note from './Note'
-
+         
 
 // this is a component
 const InputContent  = (props) =>{
@@ -14,9 +13,9 @@ const InputContent  = (props) =>{
 
     // input onChange function...
 
-    const inputData = (event) =>{
+const inputData = (event) =>{
 
-        const {name , value} = event.target;
+    const {name , value} = event.target;
         
         setData((preData) =>{
             return(
@@ -25,7 +24,7 @@ const InputContent  = (props) =>{
                      [name] : value
                  }
             )    
-        })
+       })
 
         console.log(Data);
     }
