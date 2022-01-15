@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/google_keep/static/css/main.0fcc93af.css",
-    "main.js": "/google_keep/static/js/main.8158fa44.js",
-    "static/js/787.63744994.chunk.js": "/google_keep/static/js/787.63744994.chunk.js",
-    "index.html": "/google_keep/index.html",
-    "main.0fcc93af.css.map": "/google_keep/static/css/main.0fcc93af.css.map",
-    "main.8158fa44.js.map": "/google_keep/static/js/main.8158fa44.js.map",
-    "787.63744994.chunk.js.map": "/google_keep/static/js/787.63744994.chunk.js.map"
+    "main.css": "/MyKeep.io/static/css/main.0fcc93af.css",
+    "main.js": "/MyKeep.io/static/js/main.d2a00d24.js",
+    "static/js/787.63744994.chunk.js": "/MyKeep.io/static/js/787.63744994.chunk.js",
+    "index.html": "/MyKeep.io/index.html",
+    "main.0fcc93af.css.map": "/MyKeep.io/static/css/main.0fcc93af.css.map",
+    "main.d2a00d24.js.map": "/MyKeep.io/static/js/main.d2a00d24.js.map",
+    "787.63744994.chunk.js.map": "/MyKeep.io/static/js/787.63744994.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fcc93af.css",
-    "static/js/main.8158fa44.js"
+    "static/js/main.d2a00d24.js"
   ]
 }
