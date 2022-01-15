@@ -23,7 +23,7 @@ const App = () =>{
     nItem(() =>{
       return (
         Item.filter((val , idx) =>{
-          return target != idx;
+          return target !== idx;
         })
       )
     })
