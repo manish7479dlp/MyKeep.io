@@ -5,7 +5,7 @@ const dec = {
     // backgroundColor : "blue",
     textAlign : 'center',
     padding : "10px",
-    color : 'blue'
+    color : 'maroon'
 }
 
 const Heading = () =>{

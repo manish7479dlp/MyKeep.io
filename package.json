@@ -1,7 +1,7 @@
 {
   "name": "google_keep",
   "version": "0.1.0",
-  "homepage": "http://manish7479dlp.github.io/google_keep",
+  "homepage": "http://manish7479dlp.github.io/google_keep.io",
   "private": true,
   "dependencies": {
     "@mui/icons-material": "^5.2.5",
